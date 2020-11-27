@@ -4,4 +4,4 @@
 
 <h1>What is our mission?</h1>
 
-<p>Fuck!</p>
+<p></p>
