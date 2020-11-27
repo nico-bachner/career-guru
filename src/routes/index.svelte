@@ -3,6 +3,11 @@
 		text-align: center;
 		font-size: 4em;
 	}
+	img {
+		display: block;
+		width: 50vw;
+		margin: auto;
+	}
 </style>
 
 <svelte:head>
@@ -10,3 +15,5 @@
 </svelte:head>
 
 <h1>Welcome to CareerGuru!</h1>
+
+<img src="logo.png" alt="Career Guru logo">
