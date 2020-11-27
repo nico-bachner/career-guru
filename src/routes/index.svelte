@@ -1,4 +1,7 @@
 <style>
+	:root {
+		display: grid;
+	}
 	h1 {
 		text-align: center;
 		font-size: 4em;
@@ -16,4 +19,4 @@
 
 <h1>Welcome to CareerGuru!</h1>
 
-<img src="logo.png" alt="Career Guru logo">
+<img src="hero.svg" alt="illustration of student on laptop">
