@@ -4,10 +4,7 @@
 
 <style>
 	section {
-		padding: 3em 0
-	}
-	h1, h2 {
-		text-align: center;
+		margin: 5em 4em
 	}
 
 	#home p {
@@ -20,12 +17,7 @@
 	}
 	@media screen and (min-width: 500px) {
 		#home img {
-			width: 50%;
-		}
-		.grid-4 {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 2em;
+			width: 60%;
 		}
 	}
 	@media screen and (min-width: 1000px) {
@@ -44,12 +36,8 @@
 			grid-column: 2;
 			grid-row: 1 / span 2;
 			width: 100%;
+			margin-top: 30%;
 			float: right;
-		}
-		.grid-4 {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			gap: 2em;
 		}
 	}
 </style>

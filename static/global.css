@@ -18,13 +18,13 @@ button:focus {
 }
 
 /* general block styles */
-.content{
+.content {
 	display: flex;
 	align-items: center;
 	justify-content:center;
 	flex-direction: column;
 }
-.block{
+.block {
 	display: flex;
 	align-items: center;
 	justify-content:center;
@@ -34,10 +34,39 @@ button:focus {
 /* end of general block styles */
 
 /* general text styles */
-h1{
+h1 {
 	font-size: 4em;
+	text-align: center;
 }
-h2{
+h2 {
 	font-size: 2em;
+	text-align: center;
+}
+p {
+	font-size: 1.2em;
 }
 /* end of general text styles */
+
+/* grid layout styles */
+@media screen and (min-width: 500px) {
+	.grid-4 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+	}
+}
+@media screen and (min-width: 667px) {
+	.grid-3 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2em;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.grid-4 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 2em;
+	}
+}
+/* end grid layout styles */
