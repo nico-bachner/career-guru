@@ -28,6 +28,8 @@ ul {
 /* reset user agent values*/
 body {
 	margin: 0;
+	overflow-y: scroll;
+	overflow-x: clip;
 }
 button {
 	cursor: pointer;
@@ -62,7 +64,10 @@ h2 {
 		font-size: 1.4em;
 	}
 }
-
+a{
+	color: #555B6E;
+	text-decoration: none;
+}
 /* grid layout styles */
 .grid-4, .grid-3 {
 	display: grid;
