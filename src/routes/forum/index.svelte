@@ -18,7 +18,7 @@
 </style>
 
 <svelte:head>
-	<title>CareerGuru - Forum</title>
+	<title>Forum - CareerGuru</title>
 </svelte:head>
 
 <h1>Forum</h1>

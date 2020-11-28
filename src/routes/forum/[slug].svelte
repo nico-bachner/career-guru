@@ -69,7 +69,7 @@
 </article>
 {#each post.responses as response }
 	<div class="response">
-		<p>{response.author}:</p>
+		<p>{response.author} replied:</p>
 		<p class="content">{response.content}</p>
 	</div>
 {/each}

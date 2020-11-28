@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>CareerGuru - Chat</title>
+    <title>Chat - CareerGuru</title>
 </svelte:head>
 
 <svelte:window on:unload={emitUserDisconnect}/>

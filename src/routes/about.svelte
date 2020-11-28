@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title> CareerGuru - About </title>
+	<title>About - CareerGuru</title>
 </svelte:head>
 
 <style>
