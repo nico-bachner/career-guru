@@ -1,34 +1,22 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* general */
-
-* {
-	margin: 0;
-	padding: 0;
+html {
+	font-family: 'Work Sans', sans-serif;
 }
 
-
 /* reset css*/
+body {
+	margin: 0;
+}
 button {
 	border: 0;
 	background-color: transparent;
 }
-button:focus {outline:0;}
-html{
-	height: 100%;
-	margin: 0;
-}	
-body {
-	color: #555B6E;
-	background-color:#FAF9F9;
-	height: 100%;
-	width: 100%;
-	font-weight: 100;
-	margin: 0;
-	
-	overflow-y: scroll;
-	overflow-x: hidden;
+button:focus {
+	outline: 0;
 }
+
 /* general block styles */
 .content{
 	display: flex;
@@ -44,21 +32,12 @@ body {
 	margin-top: 130px;
 }
 /* end of general block styles */
+
 /* general text styles */
 h1{
-	font-family: Work Sans, Sans Serif;
-	font-size: 5vw;
-	letter-spacing: 5px;
-	font-weight: 500;
+	font-size: 4em;
 }
 h2{
-	font-family: Work Sans, Sans Serif;
-	font-size: 2vw;
-	font-weight: 500;
-}
-p{
-	font-family: Work Sans, Sans Serif;
-	font-size: 1.25vw;
-	font-weight: 400;
+	font-size: 2em;
 }
 /* end of general text styles */

@@ -1,16 +1,18 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+	import Navbar from '../components/Navbar/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 	export let segment;
 </script>
 
 <style>
 	main {
-		padding: 2em;
+		padding: 5em 2em;
+		background-color:#FAF9F9;
+		color: #555B6E;
 	}
 </style>
 
-<Nav {segment}/>
+<Navbar {segment}/>
 
 <main>
 	<slot></slot>
