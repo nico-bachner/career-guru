@@ -17,7 +17,7 @@
 	}
 </style>
 
-<nav>
+<nav class="w-min">
 	<a aria-current="{segment === undefined ? 'page' : undefined}" href="."><button>home</button></a>
 	<a aria-current="{segment === 'about' ? 'page' : undefined}" href="about"><button>about</button></a>
 	<a aria-current="{segment === 'forum' ? 'page' : undefined}" href="forum"><button>forum</button></a>
