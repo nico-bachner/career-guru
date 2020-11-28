@@ -5,6 +5,11 @@ html {
 	font-family: 'Work Sans', sans-serif;
 }
 
+/* image default */
+img {
+	width: 100%;
+}
+
 /* reset user agent values*/
 body {
 	margin: 0;

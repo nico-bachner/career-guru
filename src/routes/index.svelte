@@ -7,9 +7,6 @@
 </svelte:head>
 
 <style>
-	section {
-		margin: 5em 4em
-	}
 	#home p {
 		font-size: 2em;
 	}
@@ -33,6 +30,9 @@
 		}
 	}
 	@media screen and (min-width: 1000px) {
+		section {
+			margin: 2em;
+		}
 		#home {
 			display: grid;
 			grid-template-columns: 3fr 2fr;
