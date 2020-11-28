@@ -6,19 +6,19 @@
 
 <style>
 	main {
-		padding: 2em;
+		padding: 5em 2em;
 		min-height: 70vh;
 		background-color:#FAF9F9;
 		color: #555B6E;
 	}
 	@media screen and (min-width: 600px) {
 		main {
-			padding: 2em 4em;
+			padding: 5em 4em;
 		}
 	}
 	@media screen and (min-width: 1000px) {
 		main {
-			padding: 2em 6em;
+			padding: 5em 6em;
 		}
 	}
 </style>

@@ -27,7 +27,10 @@
 		font-weight: 500;
 		font-size: 1.4rem;
 	}
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 700px) {
+		h1 {
+			font-size: 4em;
+		}
 		#home img {
 			width: 60%;
 		}

@@ -5,12 +5,15 @@ html {
 	font-family: 'Work Sans', sans-serif;
 }
 
-/* image default */
+/* other */
 img {
 	width: 100%;
 }
 section {
 	padding-top: 6em;
+}
+ul {
+	line-height: 1.5;
 }
 
 /* reset user agent values*/
@@ -28,8 +31,9 @@ button:focus {
 
 /* general text styles */
 h1 {
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
+	margin-bottom: 0;
 }
 h2 {
 	font-size: 2em;
