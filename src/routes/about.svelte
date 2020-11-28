@@ -15,14 +15,10 @@
 		}
 		#landing img {
 			width: 100%;
-			margin-top: 12%;
+			margin-top: calc(25vh - 20%);
 		}
 	}
-	
-	/* end of testim block */
-	
 </style>
-
 
 <section id="landing">
 	<div>

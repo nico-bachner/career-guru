@@ -55,7 +55,7 @@ p {
 		gap: 2em;
 	}
 }
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 800px) {
 	.grid-3 {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;

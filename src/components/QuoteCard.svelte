@@ -6,21 +6,27 @@
 
 <style>
     .card {
-		width: 100%;
-        background-color:#fff;
-	}
-	.author {
-		color: white;
-        background-color:#555B6E;
-        width: 100%;
+        background-color: #ffffff;
+        height: fit-content;
     }
     p {
         text-align: center;
-        padding: 1em;
+    }
+    .content {
+        padding: 2em;
+    }
+	.author {
+		color: white;
+        background-color:#555B6E;
+        padding: .5em;
     }
 </style>
 
 <div class="card">
-    <p>“{content}”</p>
-    <div class="author"><p>{author}, {author_age}</p></div>
+    <div class="content">
+        <p>“{content}”</p>
+    </div>
+    <div class="author">
+        <p>{author}, {author_age}</p>
+    </div>
 </div>
