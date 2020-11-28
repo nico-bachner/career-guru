@@ -10,6 +10,9 @@
 	#home p {
 		font-size: 2em;
 	}
+	#testimonials p {
+		font-size: 1.4em;
+	}
 	img {
 		width: 80%;
 		display: block;
@@ -30,9 +33,6 @@
 		}
 	}
 	@media screen and (min-width: 1000px) {
-		section {
-			margin: 2em;
-		}
 		#home {
 			display: grid;
 			grid-template-columns: 3fr 2fr;
@@ -59,4 +59,12 @@
 
 <ValuesSection />
 
-
+<section id="testimonials" class="grid-2">
+	<img src="testimonial.svg" alt="vector illustration">
+	<div>
+		<h2>Testimonials</h2>
+		<p>“I've always struggled with finding what I really want to do in life. Career Guru is a great opportunity to explore that.”</p>
+		<p>AnnMarie Vo, 16</p>
+		<a href="about#testimonials"><button>Start Planning</button></a>
+	</div>
+</section>

@@ -1,7 +1,4 @@
 <style>
-    section {
-        margin: 8em 0;
-    }
     img {
         width: 100%;
     }

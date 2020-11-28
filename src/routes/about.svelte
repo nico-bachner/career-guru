@@ -9,19 +9,13 @@
 
 <style>
 	@media screen and (min-width: 1000px) {
-		#landing {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			padding: 5em;
-		}
 		#landing img {
-			width: 100%;
 			margin-top: calc(25vh - 20%);
 		}
 	}
 </style>
 
-<section id="landing">
+<section id="landing" class="grid-2">
 	<div>
 		<h1>About Us</h1>
 		<p>Career Guru connects students with professional mentors to learn more about their fields of interest.</p>

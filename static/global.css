@@ -9,12 +9,16 @@ html {
 img {
 	width: 100%;
 }
+section {
+	padding-top: 6em;
+}
 
 /* reset user agent values*/
 body {
 	margin: 0;
 }
 button {
+	cursor: pointer;
 	border: 0;
 	background-color: transparent;
 }
@@ -56,6 +60,11 @@ p {
 	}
 }
 @media screen and (min-width: 1000px) {
+	.grid-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+	}
 	.grid-4 {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;

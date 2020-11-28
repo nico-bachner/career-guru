@@ -16,7 +16,7 @@
 	#logo {
 		position: fixed;
 		height: 4em;
-		width: 12em;
+		width: 11em;
 		top: .5em;
 		left: .5em;
 	}
