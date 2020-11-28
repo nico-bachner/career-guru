@@ -65,6 +65,6 @@
 		<h2>Testimonials</h2>
 		<p>“I've always struggled with finding what I really want to do in life. Career Guru is a great opportunity to explore that.”</p>
 		<p>AnnMarie Vo, 16</p>
-		<a href="about#testimonials"><button>Start Planning</button></a>
+		<a href="about#testimonials"><button>View More</button></a>
 	</div>
 </section>
