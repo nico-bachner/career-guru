@@ -1,3 +1,7 @@
+<script>
+	import ValuesSection from "../components/ValuesSection.svelte";	
+</script>
+
 <svelte:head>
 	<title>Career Guru</title>
 </svelte:head>
@@ -48,14 +52,6 @@
 	<img src="hero.svg" alt="illustration of student on laptop">
 </section>
 
-<section id="values">
-	<h2>Our Values</h2>
-	<div class="grid-4">
-		<img src="hero.svg" alt="illustration of student on laptop">
-		<img src="hero.svg" alt="illustration of student on laptop">
-		<img src="hero.svg" alt="illustration of student on laptop">
-		<img src="hero.svg" alt="illustration of student on laptop">
-	</div>
-</section>
+<ValuesSection />
 
 

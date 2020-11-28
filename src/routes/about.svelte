@@ -1,5 +1,6 @@
 <script>
 	import QuoteCard from '../components/QuoteCard.svelte'
+	import ValuesSection from '../components/ValuesSection.svelte'
 </script>
 
 <svelte:head>
@@ -38,3 +39,5 @@
 		<QuoteCard author="Angelina Vuong" author_age="16" content="I really like the idea of having a platform to explore different careers. Career Guru makes the future less intimidating."/>
 	</div>
 </section>
+
+<ValuesSection />
