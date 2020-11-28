@@ -16,10 +16,10 @@
 		font-size: 1.4rem;
 	}
 	a:hover{
-		background-color: #cceedd33;  
+		background-color: #cceedd44;  
 	}
     [aria-current], [aria-current]:hover {
-		background-color: #cceedd66;	
+		background-color: #cceedd88;	
 	}
 </style>
 

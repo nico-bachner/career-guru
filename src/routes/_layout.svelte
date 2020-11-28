@@ -8,10 +8,10 @@
 	main {
 		padding: 5em 2em;
 		min-height: 70vh;
-		background-color:#FAF9F9;
-		color: #555B6E;
+		background-color: var(--background);
+		color: var(--content);
 	}
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 500px) {
 		main {
 			padding: 5em 4em;
 		}

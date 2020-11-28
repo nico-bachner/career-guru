@@ -34,9 +34,9 @@
 	}
 	summary {
 		font-size: 1.6em;
-		color: #555B6E;
+		color: var(--content);
 	}
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 750px) {
 		.expanded {
 			display: block;
 			position: fixed;
@@ -55,8 +55,6 @@
 		<NavbarItem label={"About"} to={"about"} active="{segment == 'about' ? 'page' : undefined}" />
 		<NavbarItem label={"Forum"} to={"forum"} active="{segment == 'forum' ? 'page' : undefined}" />
 		<NavbarItem label={"Chat"} to={"chat"} active="{segment == 'chat' ? 'page' : undefined}" />
-		<NavbarItem label={"Log In"} to={"login"} active="{segment == 'login' ? 'page' : undefined}" />
-		<NavbarItem label={"Sign Up"} to={"signup"} active="{segment == 'signup' ? 'page' : undefined}" />
 	</div>
 	<details>
 		<summary>Menu</summary>
@@ -65,8 +63,6 @@
 			<li><NavbarItem label={"About"} to={"about"} active="{segment == 'about' ? 'page' : undefined}" /></li>
 			<li><NavbarItem label={"Forum"} to={"forum"} active="{segment == 'forum' ? 'page' : undefined}" /></li>
 			<li><NavbarItem label={"Chat"} to={"chat"} active="{segment == 'chat' ? 'page' : undefined}" /></li>
-			<li><NavbarItem label={"Log In"} to={"login"} active="{segment == 'login' ? 'page' : undefined}" /></li>
-			<li><NavbarItem label={"Sign Up"} to={"signup"} active="{segment == 'signup' ? 'page' : undefined}" /></li>
 		</ul>
 	</details>
 </nav>

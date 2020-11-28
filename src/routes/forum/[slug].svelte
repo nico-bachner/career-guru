@@ -18,6 +18,31 @@
 </script>
 
 <style>
+	article {
+		margin-top: 1em;
+	}
+	.content {
+		padding: 1em;
+		border-radius: 1em;
+		background-color: var(--background-darker);
+	}
+	.author {
+		text-align: center;
+	}
+	.response {
+		padding-left: 1em;
+	}
+	@media screen and (min-width: 500px) {
+		.response {
+			padding-left: 2em;
+		}
+	}
+	@media screen and (min-width: 1000px) {
+		.response {
+			padding-left: 3em;
+		}
+	}
+	
 	/*
 		By default, CSS is locally scoped to the component,
 		and any unused styles are dead-code-eliminated.
@@ -26,7 +51,7 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
-	.content :global(p) {
+	article :global(p) {
 		text-align: justify;
 	}
 </style>
@@ -35,8 +60,20 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-
-<div class="content">
-	{@html post.html}
-</div>
+<article class="content">
+	<h1>{post.title}</h1>
+	<p class="author">Asked by {post.author}</p>
+	<div class="content">
+		{@html post.html}
+	</div>
+</article>
+{#each post.responses as response }
+	<div class="response">
+		<p>{response.author}:</p>
+		<p class="content">{response.content}</p>
+	</div>
+{/each}
+<form class="response">
+	<p>Add a comment:</p>
+	<textarea></textarea>
+</form>

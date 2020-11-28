@@ -5,6 +5,15 @@ html {
 	font-family: 'Work Sans', sans-serif;
 }
 
+/* colours */
+:root {
+	--content: #555566;
+	--background: #eeeeee;
+	--background-darker: #dddddd;
+	--nav-hover: #cceedd44;
+	--nav-active: #cceedd88;
+}
+
 /* other */
 img {
 	width: 100%;
@@ -31,16 +40,27 @@ button:focus {
 
 /* general text styles */
 h1 {
-	font-size: 3em;
 	text-align: center;
-	margin-bottom: 0;
 }
 h2 {
 	font-size: 2em;
 	text-align: center;
 }
-p {
-	font-size: 1.2em;
+@media screen and (min-width: 500px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+}
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 3em;
+	}
+	p {
+		font-size: 1.4em;
+	}
 }
 
 /* grid layout styles */
@@ -56,7 +76,7 @@ p {
 		gap: 2em;
 	}
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
 	.grid-3 {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;

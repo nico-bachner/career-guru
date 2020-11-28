@@ -7,11 +7,12 @@
 </svelte:head>
 
 <style>
+	h1 {
+		font-size: 4em;
+		margin-bottom: 0;
+	}
 	#home p {
 		font-size: 2em;
-	}
-	#testimonials p {
-		font-size: 1.4em;
 	}
 	img {
 		width: 80%;
@@ -20,8 +21,8 @@
 	}
 	button {
 		padding: .6em 1.2em;
-		color: #555B6E;
-		background-color: #cceedd66;
+		color: var(--content);
+		background-color: var(--nav-active);
 		border-radius: .5em;
 		font-family: 'Work Sans', sans-serif;
 		font-weight: 500;
@@ -29,7 +30,7 @@
 	}
 	@media screen and (min-width: 700px) {
 		h1 {
-			font-size: 4em;
+			font-size: 4.5em;
 		}
 		#home img {
 			width: 60%;

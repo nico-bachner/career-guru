@@ -8,7 +8,19 @@
 </svelte:head>
 
 <style>
+	h1 {
+		font-size: 3em;
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: 700px) {
+		h1 {
+			font-size: 3.5em;
+		}
+	}
 	@media screen and (min-width: 1000px) {
+		h1 {
+			font-size: 4em;
+		}
 		#landing img {
 			margin-top: calc(25vh - 20%);
 		}
