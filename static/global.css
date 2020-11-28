@@ -8,8 +8,8 @@ html {
 /* colours */
 :root {
 	--content: #555566;
-	--background: #eeeeee;
-	--background-darker: #dddddd;
+	--background: #f8f5f5;
+	--background-darker: #e0e0e5;
 	--nav-hover: #cceedd44;
 	--nav-active: #cceedd88;
 }

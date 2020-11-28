@@ -1,6 +1,5 @@
 <script>
 	import Navbar from '../components/Navbar/Navbar.svelte';
-	import Footer from '../components/Footer.svelte';
 	export let segment;
 </script>
 
@@ -21,6 +20,11 @@
 			padding: 5em 6em;
 		}
 	}
+
+	p {
+		color: gray;
+		text-align: center;
+	}
 </style>
 
 <Navbar {segment}/>
@@ -29,4 +33,6 @@
 	<slot></slot>
 </main>
 
-<Footer/>
+<footer>
+	<p>&copy; CareerGuru 2020</p>
+</footer>

@@ -55,6 +55,7 @@
 		<NavbarItem label={"About"} to={"about"} active="{segment == 'about' ? 'page' : undefined}" />
 		<NavbarItem label={"Forum"} to={"forum"} active="{segment == 'forum' ? 'page' : undefined}" />
 		<NavbarItem label={"Chat"} to={"chat"} active="{segment == 'chat' ? 'page' : undefined}" />
+		<NavbarItem label={"Help"} to={"help"} active="{segment == 'help' ? 'page' : undefined}" />
 	</div>
 	<details>
 		<summary>Menu</summary>
@@ -63,6 +64,7 @@
 			<li><NavbarItem label={"About"} to={"about"} active="{segment == 'about' ? 'page' : undefined}" /></li>
 			<li><NavbarItem label={"Forum"} to={"forum"} active="{segment == 'forum' ? 'page' : undefined}" /></li>
 			<li><NavbarItem label={"Chat"} to={"chat"} active="{segment == 'chat' ? 'page' : undefined}" /></li>
+			<li><NavbarItem label={"Help"} to={"help"} active="{segment == 'help' ? 'page' : undefined}" /></li>
 		</ul>
 	</details>
 </nav>
