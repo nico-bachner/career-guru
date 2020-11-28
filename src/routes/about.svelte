@@ -24,9 +24,9 @@
 <section id="landing">
 	<div>
 		<h1>About Us</h1>
-		<p>CareerGuru connects students with professional mentors to learn more about their potential fields.</p>
-		<p>As the world shifts towards virtual oriented workspaces, students find themselves looking to make connections with professionals through sites like LinkedIn, Indeed, etc.</p>
-		<p>This site makes the networking process for highschool students, all the more easier.</p>
+		<p>Career Guru connects students with professional mentors to learn more about their fields of interest.</p>
+		<p>As the world shifts towards virtual workspaces, students find themselves looking to make connections with professionals through sites like LinkedIn, Indeed, etc.</p>
+		<p>This site makes the networking process for high school students all the easier.</p>
 	</div>
 	<img src="aboutimg.png" alt="People working together">
 </section>

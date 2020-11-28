@@ -10,7 +10,6 @@
 	section {
 		margin: 5em 4em
 	}
-
 	#home p {
 		font-size: 2em;
 	}
@@ -19,7 +18,16 @@
 		display: block;
 		margin: auto;
 	}
-	@media screen and (min-width: 500px) {
+	button {
+		padding: .6em 1.2em;
+		color: #555B6E;
+		background-color: #cceedd66;
+		border-radius: .5em;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 500;
+		font-size: 1.4rem;
+	}
+	@media screen and (min-width: 600px) {
 		#home img {
 			width: 60%;
 		}
@@ -27,18 +35,12 @@
 	@media screen and (min-width: 1000px) {
 		#home {
 			display: grid;
-			grid-template-columns: 4fr 3fr;
-			grid-template-rows: 10em 1fr;
+			grid-template-columns: 3fr 2fr;
 		}
 		h1 {
 			font-size: 5em;
 		}
-		#home p {
-			grid-column: 1;
-		}
 		#home img {
-			grid-column: 2;
-			grid-row: 1 / span 2;
 			width: 100%;
 			margin-top: 30%;
 			float: right;
@@ -47,8 +49,11 @@
 </style>
 
 <section id="home">
-	<h1>Career Guru</h1>
-	<p>Chat with professionals and plan your career beyond high school</p>
+	<div>
+		<h1>Career Guru</h1>
+		<p>Chat with professionals and plan your career beyond high school</p>
+		<a href="signup"><button>Start Planning</button></a>
+	</div>
 	<img src="hero.svg" alt="illustration of student on laptop">
 </section>
 
