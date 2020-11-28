@@ -42,7 +42,10 @@ h2 {
 p {
 	font-size: 1.2em;
 }
-
+a{
+	color: #555B6E;
+	text-decoration: none;
+}
 /* grid layout styles */
 .grid-4, .grid-3 {
 	display: grid;
