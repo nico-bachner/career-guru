@@ -11,7 +11,7 @@
 </script>
 
 <style>
-	.button {
+	.right-button {
 		text-align: end;
 	}
 </style>
@@ -31,7 +31,7 @@
 		<h2>{post.title}</h2>
 		<p class="author">Asked by {post.author}</p>
 		<p>{post.preview}</p>
-		<div class="button">
+		<div class="right-button">
 			<a rel="prefetch" href="forum/{post.slug}"><button>Read More</button></a>
 		</div>
 	</article>

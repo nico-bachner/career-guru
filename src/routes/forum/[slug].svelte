@@ -19,29 +19,26 @@
 
 <style>
 	.response {
-		padding-left: 1em;
+		margin-left: 1em;
 	}
 	@media screen and (min-width: 500px) {
 		.response {
-			padding-left: 2em;
+			margin-left: 2em;
 		}
 	}
 	@media screen and (min-width: 1000px) {
 		.response {
-			padding-left: 3em;
+			margin-left: 3em;
 		}
 	}
-	
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	article :global(p) {
-		text-align: justify;
+	textarea {
+		border: none;
+		border-radius: 1em;
+		padding: 1em;
+		font-size: 1em;
+		font-family: inherit;
+		resize: none;
+		width: calc(100% - 2em);
 	}
 </style>
 
@@ -57,12 +54,13 @@
 	</div>
 </article>
 {#each post.responses as response }
-	<div class="response">
+	<article class="response">
 		<p>{response.author} replied:</p>
 		<p class="content">{response.content}</p>
-	</div>
+	</article>
 {/each}
-<form class="response">
+<form class="response right-button">
 	<p>Add a comment:</p>
-	<textarea></textarea>
+	<textarea placeholder="Type your comment here"></textarea>
+	<button>Send</button>
 </form>

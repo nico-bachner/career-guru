@@ -17,9 +17,9 @@
 	img {
 		width: 80%;
 		display: block;
-		margin: auto;
+		margin: 2em auto;
 	}
-	@media screen and (min-width: 700px) {
+	@media screen and (min-width: 750px) {
 		h1 {
 			font-size: 4.5em;
 		}
@@ -37,7 +37,7 @@
 		}
 		#home img {
 			width: 100%;
-			margin-top: 30%;
+			margin-top: calc(35vh - 20%);
 			float: right;
 		}
 	}
