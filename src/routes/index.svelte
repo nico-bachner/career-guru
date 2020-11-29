@@ -47,7 +47,7 @@
 	<div>
 		<h1>Career Guru</h1>
 		<p>Chat with professionals and plan your career beyond high school</p>
-		<a href="signup"><button>Start Planning</button></a>
+		<a href="forum"><button>Explore Opportunities</button></a>
 	</div>
 	<img src="hero.svg" alt="illustration of student on laptop">
 </section>
