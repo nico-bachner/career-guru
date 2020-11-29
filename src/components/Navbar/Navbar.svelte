@@ -49,7 +49,7 @@
 </style>
 
 <nav>
-	<a id="logo" href="."><img src="logo.png" alt="logo"></a>
+	<a id="logo" href="."><img src="logo.svg" alt="logo"></a>
 	<div class="expanded">
 		<NavbarItem label={"Home"} active="{segment == undefined ? 'page' : undefined}" />
 		<NavbarItem label={"About"} to={"about"} active="{segment == 'about' ? 'page' : undefined}" />
