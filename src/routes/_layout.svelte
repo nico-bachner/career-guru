@@ -5,24 +5,26 @@
 
 <style>
 	main {
-		padding: 5em 2em;
+		padding: 5em 1em;
 		min-height: 70vh;
 		background-color: var(--background);
 		color: var(--content);
 	}
 	@media screen and (min-width: 500px) {
 		main {
-			padding: 6em 4em;
+			padding: 6em 2em;
 		}
 	}
 	@media screen and (min-width: 1000px) {
 		main {
-			padding: 8em 6em;
+			padding: 8em 3em;
 		}
 	}
 
-	p {
+	footer {
+		padding: 1em;
 		color: gray;
+		background-color: var(--background-darker);
 		text-align: center;
 	}
 </style>

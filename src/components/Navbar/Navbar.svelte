@@ -18,7 +18,7 @@
 		height: 4em;
 		width: 11em;
 		top: .5em;
-		left: .5em;
+		left: 1em;
 	}
 	.expanded {
 		display: none;
@@ -26,15 +26,21 @@
 	details {
 		display: initial;
 		position: fixed;
-		right: 2em;
+		right: 0;
 		top: 1.5em;
 	}
 	ul {
 		background-color: white;
+		list-style-type: none;
+		margin: 2.5em 1em 0 -1em;
+		padding: 1em;
+		border-radius: 1em;
+		text-align: center;
 	}
 	summary {
 		font-size: 1.6em;
 		color: var(--content);
+		margin-right: 1.5em;
 	}
 	@media screen and (min-width: 750px) {
 		.expanded {
