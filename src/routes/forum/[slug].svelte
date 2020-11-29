@@ -18,17 +18,6 @@
 </script>
 
 <style>
-	article {
-		margin-top: 1em;
-	}
-	.content {
-		padding: 1em;
-		border-radius: 1em;
-		background-color: var(--background-darker);
-	}
-	.author {
-		text-align: center;
-	}
 	.response {
 		padding-left: 1em;
 	}
@@ -63,7 +52,7 @@
 <article class="content">
 	<h1>{post.title}</h1>
 	<p class="author">Asked by {post.author}</p>
-	<div class="content">
+	<div>
 		{@html post.html}
 	</div>
 </article>

@@ -5,19 +5,19 @@
 
 <style>
 	main {
-		padding: 5em 1em;
+		padding: 5em 1.5em;
 		min-height: 70vh;
 		background-color: var(--background);
 		color: var(--content);
 	}
 	@media screen and (min-width: 500px) {
 		main {
-			padding: 6em 2em;
+			padding: 6em 3em;
 		}
 	}
 	@media screen and (min-width: 1000px) {
 		main {
-			padding: 8em 3em;
+			padding: 7em 4.5em;
 		}
 	}
 
