@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="theme-color" content="#333333">
 	
 	<!-- desc / author / keywords-->
 	<meta content="Chat with professionals and plan your career as a highschool student." name="description">
@@ -14,7 +13,7 @@
 
 	<link rel="stylesheet" href="global.css">
 	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/svg" href="icon.svg">
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
@@ -30,9 +29,9 @@
 	     the current page has one -->
 	%sapper.head%
 </head>
-<body>
+<body id="sapper">
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
+	%sapper.html%
 </body>
 </html>
