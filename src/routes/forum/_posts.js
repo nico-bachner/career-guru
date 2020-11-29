@@ -36,7 +36,7 @@ const posts = [
 	{
 		title: 'How is COVID-19 transforming the healthcare and pharmaceutical industries?',
 		slug: 'covid-19-impact',
-		preview: 'I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19might change job prospects and ...',
+		preview: 'I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19 might change job prospects and ...',
 		author: 'Katie Holmes',
 		html: `
 			<p>I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19 might change this industry for future generations.</p> 
