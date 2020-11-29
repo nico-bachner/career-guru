@@ -21,8 +21,29 @@ img {
 section {
 	padding-top: 6em;
 }
+section:first-of-type {
+	padding-top: initial;
+}
+a {
+	color: #555B6E;
+}
 ul {
 	line-height: 1.5;
+}
+button {
+	padding: .6em 1.2em;
+	color: var(--content);
+	background-color: var(--nav-active);
+	border-radius: .5em;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.4rem;
+}
+article {
+	background-color: var(--background-darker);
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
 }
 
 /* reset user agent values*/
@@ -34,7 +55,6 @@ body {
 button {
 	cursor: pointer;
 	border: 0;
-	background-color: transparent;
 }
 button:focus {
 	outline: 0;
@@ -64,10 +84,7 @@ h2 {
 		font-size: 1.4em;
 	}
 }
-a{
-	color: #555B6E;
-	text-decoration: none;
-}
+
 /* grid layout styles */
 .grid-4, .grid-3 {
 	display: grid;

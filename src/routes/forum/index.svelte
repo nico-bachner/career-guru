@@ -11,9 +11,11 @@
 </script>
 
 <style>
-	p {
+	.button {
+		text-align: end;
+	}
+	.author {
 		text-align: center;
-		font-size: 1.6em;
 	}
 </style>
 
@@ -22,15 +24,19 @@
 </svelte:head>
 
 <h1>Forum</h1>
-<p>Explore careers</p>
 
-<ul>
-	{#each posts as post}
-		<!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
+{#each posts as post}
+	<!-- we're using the non-standard `rel=prefetch` attribute to
+			tell Sapper to load the data for the page as soon as
+			the user hovers over the link or taps it, instead of
+			waiting for the 'click' event -->
 
-		<li><a rel="prefetch" href="forum/{post.slug}">{post.title}</a></li>
-	{/each}
-</ul>
+	<article>
+		<h2>{post.title}</h2>
+		<p class="author">By {post.author}</p>
+		<p>{post.preview}</p>
+		<div class="button">
+			<a rel="prefetch" href="forum/{post.slug}"><button>Read More</button></a>
+		</div>
+	</article>
+{/each}

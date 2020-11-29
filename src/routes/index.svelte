@@ -19,15 +19,6 @@
 		display: block;
 		margin: auto;
 	}
-	button {
-		padding: .6em 1.2em;
-		color: var(--content);
-		background-color: var(--nav-active);
-		border-radius: .5em;
-		font-family: 'Work Sans', sans-serif;
-		font-weight: 500;
-		font-size: 1.4rem;
-	}
 	@media screen and (min-width: 700px) {
 		h1 {
 			font-size: 4.5em;

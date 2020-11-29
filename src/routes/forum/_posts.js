@@ -11,7 +11,7 @@ const posts = [
 	{
 		title: 'What jobs actually use calculus?',
 		slug: 'calculus-jobs',
-		intro: 'I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there ...',
+		preview: 'I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there ...',
 		author: 'test_user_123',
 		html: `
 			<p>I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there any jobs that use calculus concepts?</p>
@@ -34,8 +34,10 @@ const posts = [
 		]
 	},
 	{
-		title: 'How is COVID-19 transforming the healthcare and pharmaceutical industries',
+		title: 'How is COVID-19 transforming the healthcare and pharmaceutical industries?',
 		slug: 'covid-19-impact',
+		preview: 'I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19might change job prospects and ...',
+		author: 'test_user_123',
 		html: `
 			<p>I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19might change job prospects and ...</p>
 		`
