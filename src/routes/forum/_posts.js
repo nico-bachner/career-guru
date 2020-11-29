@@ -12,7 +12,7 @@ const posts = [
 		title: 'What jobs actually use calculus?',
 		slug: 'calculus-jobs',
 		preview: 'I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there ...',
-		author: 'test_user_123',
+		author: 'Robert Piccolo',
 		html: `
 			<p>I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there any jobs that use calculus concepts?</p>
 
@@ -20,13 +20,13 @@ const posts = [
 		`,
 		responses: [
 			{
-				author: 'henlo [Professional Mentor]',
+				author: 'Angela Wigens [Professional Mentor]',
 				content: `
 					The PhD's I work with have have extensive mathematical backgrounds. None of them "do calculus" day to day. Instead, their job is to figure out the best way to get computers to "do" math for us. I'd be lost having prior background knowledge in calculus.
 				`
 			},
 			{
-				author: 'world [Professional Mentor]',
+				author: 'Christopher Albert [Professional Mentor]',
 				content: `
 					Hi, in research, we use Calculus just about every day. There are some subtleties for smoothing out experimental noise and error checking, including things like making sure the area under the curve agrees with physical laws. PM me if you want to know more!
 				`
@@ -37,7 +37,7 @@ const posts = [
 		title: 'How is COVID-19 transforming the healthcare and pharmaceutical industries?',
 		slug: 'covid-19-impact',
 		preview: 'I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19might change job prospects and ...',
-		author: 'test_user_123',
+		author: 'Katie Holmes',
 		html: `
 			<p>I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19 might change this industry for future generations.</p> 
 			<p>Like will there be a significant impact for us youngsters in high school or will this pandemic be insignificant in the long run, please let me know!</p>
@@ -52,7 +52,7 @@ const posts = [
 			{
 				author: 'Benjamin Boardley [Professional Mentor]',
 				content: `
-					Hi, to answer your question I don't think it will affect you youngsters that badly. The impact will be minor as by the time you're in the workforce the effects of COVID-19 would've wore off
+					Hi, to answer your question I don't think it will affect you youngsters that badly. The impact will be minor as by the time you're in the workforce the effects of COVID-19 will have worn off.
 				`
 			}
 		]
