@@ -18,7 +18,7 @@ The biggest challenge, however, was the backend. Not one of us had previously de
 In order to garner some site appeal, we used Figma to create a rough mockup of the site. We used UnDraw, an open-source illustration library, for vector illustrations and Iconify, the Figma plugin, for icons. Finally, we used "Coolors", a palette generator, to create a color palette. All components of the site and the overall site design were created with the user in mind.
 
 ## Completion
-We feel our project was a success. We also feel that we met our goal of creating a project to aid students exploring career paths. CareerGuru effectively brings students together and builds a strong community of passionate students and mentors. To achieve this, we create a (almost) fully functional web application with a forum and a functioning basicchat. In the future, we hope to build on the application to make it ready for people to use.
+We feel our project was a success. We also feel that we met our goal of creating a project to aid students exploring career paths. CareerGuru effectively brings students together and builds a strong community of passionate students and mentors. To achieve this, we create an almost fully functional web application with a working forum and a fully functioning chat. In the future, we hope to build on the application to make it ready for people to use.
 
 ## Contact Us
 Feel free to get in touch with one of us if you have any questions or comments!
