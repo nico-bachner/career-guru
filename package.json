@@ -11,9 +11,7 @@
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^1.0.0",
-    "socket.io": "^3.0.3",
-    "socket.io-client": "^3.0.3"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
