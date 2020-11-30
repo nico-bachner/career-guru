@@ -39,16 +39,6 @@
 	.response {
 		margin-left: 1em;
 	}
-	@media screen and (min-width: 500px) {
-		.response {
-			margin-left: 2em;
-		}
-	}
-	@media screen and (min-width: 1000px) {
-		.response {
-			margin-left: 3em;
-		}
-	}
 	textarea {
 		border: none;
 		border-radius: 1em;
@@ -57,7 +47,32 @@
 		font-family: inherit;
 		resize: none;
 		width: calc(100% - 2em);
-		height: 4em;
+		height: 2em;
+	}
+	textarea:focus {
+		height: 3em;
+	}
+	@media screen and (min-width: 500px) {
+		.response {
+			margin-left: 2em;
+		}
+		textarea {
+			height: 3em;
+		}
+		textarea:focus {
+			height: 5em;
+		}
+	}
+	@media screen and (min-width: 1000px) {
+		.response {
+			margin-left: 3em;
+		}
+		textarea {
+			height: 4em;
+		}
+		textarea:focus {
+			height: 7em;
+		}
 	}
 </style>
 
@@ -82,7 +97,7 @@
 
 {#if newComment}
 	<div class="response">
-		<p>Reply by ___ (anonymous)</p>
+		<p>Reply by _____ (anonymous)</p>
 		<article>
 			{@html newCommentContents}
 		</article>
