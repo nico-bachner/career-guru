@@ -6,6 +6,10 @@
 		const data = await res.json();
 
 		if (res.status === 200) {
+			data.content = marked(data.content);
+			for (let i=0; i < data.responses.length; i++) {
+				data.responses[i].content = marked(data.responses[i].content);
+			}
 			return { post: data };
 		} else {
 			this.error(res.status, data.message);
@@ -14,10 +18,24 @@
 </script>
 
 <script>
+	import marked from 'marked';
+
+	let newComment = false;
+	let newCommentContents = undefined;
+	let newCommentSourceContents = "";
+	function postNewComment() {
+		newCommentContents = marked(newCommentSourceContents);
+		newCommentSourceContents = "";
+		newComment = true;
+	}
+
 	export let post;
 </script>
 
 <style>
+	article {
+		padding: .2em 1.6em;
+	}
 	.response {
 		margin-left: 1em;
 	}
@@ -39,6 +57,7 @@
 		font-family: inherit;
 		resize: none;
 		width: calc(100% - 2em);
+		height: 4em;
 	}
 </style>
 
@@ -46,21 +65,32 @@
 	<title>{post.title}</title>
 </svelte:head>
 
+<h1>{post.title}</h1>
+<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
 <article class="content">
-	<h1>{post.title}</h1>
-	<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
-	<div>
-		{@html post.html}
-	</div>
+	{@html post.content}
 </article>
+
 {#each post.responses as response }
-	<article class="response">
-		<p>{response.author.firstName} {response.author.lastName} ({response.author.type}) replied:</p>
-		<p class="content">{response.content}</p>
-	</article>
+	<div class="response">
+		<p>Reply by {response.author.firstName} {response.author.lastName} ({response.author.type})</p>
+		<article>
+			{@html response.content}
+		</article>
+	</div>
 {/each}
-<form class="response right-button">
+
+{#if newComment}
+	<div class="response">
+		<p>Reply by ___ (anonymous)</p>
+		<article>
+			{@html newCommentContents}
+		</article>
+	</div>
+{/if}
+
+<div class="response">
 	<p>Add a comment:</p>
-	<textarea placeholder="Type your comment here"></textarea>
-	<button>Send</button>
-</form>
+	<textarea placeholder="Type your comment here" bind:value={newCommentSourceContents}></textarea>
+	<button on:click={postNewComment}>Send</button>
+</div>
