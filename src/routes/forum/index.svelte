@@ -29,7 +29,7 @@
 			waiting for the 'click' event -->
 	<article class="content">
 		<h2>{post.title}</h2>
-		<p class="author">Asked by {post.author}</p>
+		<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
 		<p>{post.preview}</p>
 		<div class="right-button">
 			<a rel="prefetch" href="forum/{post.slug}"><button>Read More</button></a>

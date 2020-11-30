@@ -48,14 +48,14 @@
 
 <article class="content">
 	<h1>{post.title}</h1>
-	<p class="author">Asked by {post.author}</p>
+	<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
 	<div>
 		{@html post.html}
 	</div>
 </article>
 {#each post.responses as response }
 	<article class="response">
-		<p>{response.author} replied:</p>
+		<p>{response.author.firstName} {response.author.lastName} ({response.author.type}) replied:</p>
 		<p class="content">{response.content}</p>
 	</article>
 {/each}

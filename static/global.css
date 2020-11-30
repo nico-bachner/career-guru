@@ -39,17 +39,17 @@ button {
 	font-weight: 500;
 	font-size: 1.4rem;
 }
-article {
-	background-color: var(--background-darker);
-	border-radius: 1em;
-	padding: 1em;
-	margin-top: 1em;
-}
 article p {
 	text-align: justify;
 }
 .author {
 	text-align: center;
+}
+article {
+	background-color: var(--background-darker);
+	border-radius: 1em;
+	padding: 0.2em 1.8em;
+	margin-top: 1em;
 }
 
 /* reset user agent values*/
