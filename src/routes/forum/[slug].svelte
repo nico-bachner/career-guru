@@ -6,6 +6,10 @@
 		const data = await res.json();
 
 		if (res.status === 200) {
+			data.content = marked(data.content);
+			for (let i=0; i < data.responses.length; i++) {
+				data.responses[i].content = marked(data.responses[i].content);
+			}
 			return { post: data };
 		} else {
 			this.error(res.status, data.message);
@@ -30,7 +34,7 @@
 
 <style>
 	article {
-		padding: 1em;
+		padding: .2em 1.6em;
 	}
 	.response {
 		margin-left: 1em;
