@@ -7,7 +7,7 @@
 
 const posts = [
 	{
-		title: `hat jobs actually use calculus?`,
+		title: `What jobs actually use calculus?`,
 		slug: `calculus-jobs`,
 		preview: `I really enjoy my calculus course, but I don't know how finding a derivative would be useful in real life ...`,
 		author: {

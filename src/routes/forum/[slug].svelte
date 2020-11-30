@@ -73,7 +73,7 @@
 
 {#each post.responses as response }
 	<div class="response">
-		<p>{response.author.firstName} {response.author.lastName} ({response.author.type}) replied:</p>
+		<p>Reply by {response.author.firstName} {response.author.lastName} ({response.author.type})</p>
 		<article>
 			{@html response.content}
 		</article>
@@ -82,7 +82,7 @@
 
 {#if newComment}
 	<div class="response">
-		<p>An anonymous person replied:</p>
+		<p>Reply by ___ (anonymous)</p>
 		<article>
 			{@html newCommentContents}
 		</article>
