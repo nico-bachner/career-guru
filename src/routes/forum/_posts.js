@@ -15,10 +15,10 @@ const posts = [
 			lastName: 'Piccolo',
 			type: 'High School Student'
 		},
-		html: `
-			<p>I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there any jobs that use calculus concepts?</p>
+		content: `
+			I really enjoy my calculus course, but I don’t know how finding a derivative would be useful in real life. Is there any jobs that use calculus concepts?
 
-			<p>It's hard to find a job where math is actually done. I am in my last semester of my senior year I want to find some career options. Ideally I'd like some of them to be with calculus. I have been considering things in demand such as computational mathematics/physics, machine learning, operations research, etc. Does anyone know if there are many in demand opportunities for calculus?</p>
+			It's hard to find a job where math is actually done. I am in my last semester of my senior year I want to find some career options. Ideally I'd like some of them to be with calculus. I have been considering things in demand such as computational mathematics/physics, machine learning, operations research, etc. Does anyone know if there are many in demand opportunities for calculus?
 		`,
 		responses: [
 			{
@@ -52,8 +52,8 @@ const posts = [
 			lastName: 'Thompson',
 			type: 'High School Student'
 		},
-		html: `
-			<p>What do software engineers do on a day-to-day basis? Is it just coding all day or are there other important things that aren't coding related. I'm interested in software development as a career path, but I'm not sure if I'm willing to spend all my time just coding.</p>
+		content: `
+			What do software engineers do on a day-to-day basis? Is it just coding all day or are there other important things that aren't coding related. I'm interested in software development as a career path, but I'm not sure if I'm willing to spend all my time just coding.
 		`,
 		responses: [
 			{
@@ -75,10 +75,12 @@ const posts = [
 			lastName: 'Summers',
 			type: 'Middle School Student'
 		},
-		html: `
-			<p>I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19 might change this industry for future generations.</p> 
-			<p>Will there be a significant impact for us still in high school or will this pandemic be insignificant in the long run.</p>
-			<p>Please let me know!</p>
+		content: `
+			I’m interested in pursuing a career in medicine, but I’m wondering how COVID-19 might change this industry for future generations.
+			
+			Will there be a significant impact for us still in high school or will this pandemic be insignificant in the long run.
+			
+			Please let me know!
 		`,
 		responses: [
 			{
@@ -109,9 +111,5 @@ const posts = [
 		]
 	}
 ];
-
-posts.forEach(post => {
-	post.html = post.html.replace(/^\t{3}/gm, '');
-});
 
 export default posts;

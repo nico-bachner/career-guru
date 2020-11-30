@@ -14,18 +14,24 @@
 </script>
 
 <script>
-	export let post;
+	import marked from 'marked';
+
 	let newComment = false;
 	let newCommentContents = undefined;
 	let newCommentSourceContents = "";
 	function postNewComment() {
-		newCommentContents = newCommentSourceContents;
+		newCommentContents = marked(newCommentSourceContents);
 		newCommentSourceContents = "";
 		newComment = true;
 	}
+
+	export let post;
 </script>
 
 <style>
+	article {
+		padding: 1em;
+	}
 	.response {
 		margin-left: 1em;
 	}
@@ -47,6 +53,7 @@
 		font-family: inherit;
 		resize: none;
 		width: calc(100% - 2em);
+		height: 4em;
 	}
 </style>
 
@@ -54,26 +61,31 @@
 	<title>{post.title}</title>
 </svelte:head>
 
+<h1>{post.title}</h1>
+<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
 <article class="content">
-	<h1>{post.title}</h1>
-	<p class="author">Asked by {post.author.firstName} {post.author.lastName} ({post.author.type})</p>
-	<div>
-		{@html post.html}
-	</div>
+	{@html post.content}
 </article>
+
 {#each post.responses as response }
-	<article class="response">
+	<div class="response">
 		<p>{response.author.firstName} {response.author.lastName} ({response.author.type}) replied:</p>
-		<p class="content">{response.content}</p>
-	</article>
+		<article>
+			{@html response.content}
+		</article>
+	</div>
 {/each}
+
 {#if newComment}
-	<article class="response">
+	<div class="response">
 		<p>An anonymous person replied:</p>
-		<p class="content">{newCommentContents}</p>
-	</article>
+		<article>
+			{@html newCommentContents}
+		</article>
+	</div>
 {/if}
-<div class="response right-button">
+
+<div class="response">
 	<p>Add a comment:</p>
 	<textarea placeholder="Type your comment here" bind:value={newCommentSourceContents}></textarea>
 	<button on:click={postNewComment}>Send</button>
