@@ -61,10 +61,6 @@ body {
 button {
 	cursor: pointer;
 	border: 0;
-	margin: 1em;
-}
-button:focus {
-	outline: 0;
 }
 
 /* general text styles */
@@ -72,7 +68,7 @@ h1 {
 	text-align: center;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 }
 p {
@@ -82,6 +78,9 @@ p {
 	h1 {
 		font-size: 2.5em;
 	}
+	h2 {
+		font-size: 2em;
+	}
 	p {
 		font-size: 1.2em;
 	}
@@ -89,6 +88,9 @@ p {
 @media screen and (min-width: 1000px) {
 	h1 {
 		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.5em;
 	}
 	p {
 		font-size: 1.3em;
