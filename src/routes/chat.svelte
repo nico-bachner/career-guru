@@ -2,4 +2,11 @@
     <title>Chat - CareerGuru</title>
 </svelte:head>
 
-<center><embed src="https://careerguru-chat.vercel.app/" style="width: 50vw; height: 100vh;"></center>
+<style>
+    iframe {
+        width: 100%;
+        height: 80vh;
+    }
+</style>
+
+<iframe title="chat" src="https://careerguru-chat.vercel.app/" frameborder="0"></iframe>
