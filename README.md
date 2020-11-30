@@ -6,7 +6,7 @@ CareerGuru connects students with professional mentors to help them learn more a
 Creating a community web application was an ambitious undertaking from the start. There are many different parts that have to work smoothly together.
 
 ### Collaborating through [git](https://git-scm.com)
-Our challenges begun with the collaboration aspect. We decided it best if we adopted git workflows. However, not all of us had previously used git and getting everyone on the same level was one of the many challenges we faced. But now, we all feel more confident in using git for collaboration. Even the people with prior experience learnt a lot.
+Our challenges began with the collaboration aspect. We decided it best if we adopted git workflows. However, not all of us had previously used git and getting everyone on the same level was one of the many challenges we faced. But now, we all feel more confident in using git for collaboration. Even the people with prior experience learnt a lot.
 
 ### Front End
 Since we were building a web application, we knew from the start that the codebase was going to be extensive and we would benefit greatly from pulling in a framework. We chose [Svelte](https://svelte.dev), since some among us had not had any prior experience with frontend web frameworks and Svelte is the most beginner-friendly we know of.
