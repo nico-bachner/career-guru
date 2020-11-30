@@ -15,6 +15,14 @@
 
 <script>
 	export let post;
+	let newComment = false;
+	let newCommentContents = undefined;
+	let newCommentSourceContents = "";
+	function postNewComment() {
+		newCommentContents = newCommentSourceContents;
+		newCommentSourceContents = "";
+		newComment = true;
+	}
 </script>
 
 <style>
@@ -59,8 +67,14 @@
 		<p class="content">{response.content}</p>
 	</article>
 {/each}
-<form class="response right-button">
+{#if newComment}
+	<article class="response">
+		<p>An anonymous person replied:</p>
+		<p class="content">{newCommentContents}</p>
+	</article>
+{/if}
+<div class="response right-button">
 	<p>Add a comment:</p>
-	<textarea placeholder="Type your comment here"></textarea>
-	<button>Send</button>
-</form>
+	<textarea placeholder="Type your comment here" bind:value={newCommentSourceContents}></textarea>
+	<button on:click={postNewComment}>Send</button>
+</div>
