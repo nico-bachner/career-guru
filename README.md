@@ -8,7 +8,7 @@ Creating a community web application was an ambitious undertaking from the start
 Our challenges began with the collaboration aspect. We decided it best if we adopted git workflows. However, not all of us had previously used git and getting everyone on the same level was one of the many challenges we faced. But now, we all feel more confident in using git for collaboration. Even the people with prior experience learnt a lot.
 
 ### Front End
-Since we were building a web application, we knew from the start that the codebase was going to be extensive and we would benefit greatly from pulling in a framework. We chose [Svelte](https://svelte.dev), since some among us had not had any prior experience with frontend web frameworks and Svelte is the most beginner-friendly we know of.
+Since we were building a web application, we knew from the start that the codebase was going to be extensive and we would benefit greatly from pulling in a framework. We chose [Svelte](https://svelte.dev), since some of us had not had any prior experience with frontend web frameworks and Svelte is the most beginner-friendly we know of.
 
 ### Back End
 The biggest challenge, however, was the backend. Not one of us had previously developed a backend or even used a BaaS (Backend-as-a-Service). To implement our chat feature, we needed to learn everything from scratch. When we didn’t know any better, we improvised when things didn’t work out.
