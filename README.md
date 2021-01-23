@@ -1,3 +1,4 @@
+# CareerGuru
 ## Theme
 CareerGuru connects students with professional mentors to help them learn more about their potential fields. As we shift towards virtual oriented workspaces, students are looking to make connections with professionals through sites like LinkedIn, Indeed, etc. CareerGuru makes the networking process for high school students much easier.
 
